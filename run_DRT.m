@@ -7,9 +7,9 @@ clear; clc; close all
 % Data
 
     % Data path and name
-    filename_data = "1. Li'SE'Li after 0.5 mAh plating GEIS.csv";
+    %filename_data = "1. Li'SE'Li after 0.5 mAh plating GEIS.csv";
     %filename_data = "1. Li'SE'Li after 0.5 mAh plating PEIS.csv";
-    %filename_data = "2. SUS'SE'Li after 0.5 mAh plating PEIS.csv";
+    filename_data = "2. SUS'SE'Li after 0.5 mAh plating PEIS.csv";
     
    % Freq range to include
     f_range = [-inf inf]; % [-inf inf] to include all data
@@ -18,7 +18,7 @@ clear; clc; close all
 %  Config DRT
 
    % Hyperparameters
-    l_star = -5; % regularization parameter (lambda), log scale
+    l_star = -4; % regularization parameter (lambda), log scale
                 % --> 적절한 l (lambda) 값을 구하기 위해서는 run_DRT_CV.m 파일 이용.
 
     t_lb = -6; % time scale to include in DRT analysis, lower limit, log scale   
